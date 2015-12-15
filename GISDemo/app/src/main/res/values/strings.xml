@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">GISDemo</string>
+    <string name="take_photo">拍照</string>
+    <string name="photo_name">相片名称</string>
+    <string name="takePhoto">拍照</string>
+</resources>

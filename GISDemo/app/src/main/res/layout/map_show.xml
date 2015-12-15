@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapShow">
+
+    <com.supermap.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_above="@+id/linearLayout" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dip"
+        android:id="@+id/btn_location"
+        android:background="@drawable/location_marker"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位"
+            android:layout_toLeftOf="@+id/button_location"
+            android:layout_alignBottom="@+id/button_location"
+            android:textColor="@color/black"
+
+            android:textIsSelectable="false" />
+        <Button
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/button_location"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/location_mark2" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+            <TableRow >
+                <TextView android:text="经度："
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+
+                    android:padding="3dp"
+                    android:textColor="@color/facebook_blue"/>
+
+                <TextView  android:hint="0.0"
+                    android:textColor="@color/facebook_blue"
+                    android:layout_width="match_parent"
+                    android:id="@+id/longitude"
+                    />
+            </TableRow>
+            <TableRow >
+                <TextView android:text="纬度："
+                    android:layout_width="wrap_content"
+                    android:gravity="left"
+
+                    android:padding="3dp"
+                    android:textColor="@color/facebook_blue"/>
+
+                <TextView  android:hint="0.0"
+                    android:textColor="@color/facebook_blue"
+                    android:layout_width="match_parent"
+                    android:id="@+id/latitude"
+
+
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
